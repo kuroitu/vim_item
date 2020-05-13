@@ -1,9 +1,9 @@
-![Iceberg](https://cocopon.github.io/iceberg.vim/assets/github/20180804/cover.png)
+![Pyceberg](https://cocopon.github.io/iceberg.vim/assets/github/20180804/cover.png)
 
 Pyceberg is a well-designed, eye-friendly, dark blue color scheme for Vim and Neovim, a few customization for python.
 
-![Screenshot](https://github.com/pyceberg.vim/images/screenshot1.png)
-![Screenshot](https://github.com/pyceberg.vim/images/screenshot2.png)
+![Screenshot](https://github.com/vim_item/pyceberg/images/screenshot1.png)
+![Screenshot](https://github.com/vim_item/pyceberg/images/screenshot2.png)
 
 See the [official site](https://cocopon.github.io/iceberg.vim/) or the
 [vimonline page](https://www.vim.org/scripts/script.php?script_id=4820) for more information.
