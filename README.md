@@ -41,6 +41,12 @@ pythonのパスが通っているかを確認するためにはvimを起動し
     :python3 import sys; print(sys.version)
 
 と入力し、python3のバージョンが表示されるかを調べます。  
+表示されない場合は
+
+    $ export PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+    $ export PATH="${HOME}\Library/Python/3.8/bin:${PATH}"
+
+などとすると動くはず。
 
 Example for setting vimrc.
 Original code is
