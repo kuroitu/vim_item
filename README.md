@@ -17,11 +17,39 @@ and I customized something to use syntax highlight for python.
 vimrcの設定例。元となるコードは
 [こちら](https://qiita.com/ahiruman5/items/4f3c845500c172a02935)  
 快適なコーディングのためにいくつか追加でキー設定などを入れています。  
+お使いのvimの補完プラグインが-conceal, -lua, -python3の場合、python補完機能が使えません。  
+[こちら](http://marlog.jp/vimpython3)
+などを参考にvimを再インストールする必要があります。  
+vimの補完プラグイン確認は以下；
+
+    $ vim --version
+
+Homebrewは
+[こちら](https://brew.sh/index_ja)  
+xcodeはApple Storeでインストールできます。
+あとは記事に従って
+
+    $ brew install vim
+    $ which vim
+
+もしvimが/usr/local/bin/vimに切り替わっていない場合は
+
+    $ export PATH=/usr/local/bin/:$PATH
+
+pythonのパスが通っているかを確認するためにはvimを起動し
+
+    :python3 import sys; print(sys.version)
+
+と入力し、python3のバージョンが表示されるかを調べます。  
 
 Example for setting vimrc.
 Original code is
 [here](https://qiita.com/ahiruman5/items/4f3c845500c172a02935)
-and some customization for more comfotable coding, key setting and so on , added.
+and some customization for more comfotable coding, key setting and so on , added.  
+If your vim complementary plugin is -conceal, -lua or -python3 then, could not use python complementary system.  
+Refer to
+[here](http://marlog.jp/vimpython3)
+and should enable complementary plugin.
 
 # Usage
 ## python.vim
