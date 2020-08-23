@@ -99,7 +99,9 @@ NeoBundleCheck
 "  colorscheme edge
 "endif
 " icebergに設定
-colorscheme iceberg
+if neobundle#is_installed('iceberg.vim')
+  colorscheme iceberg
+endif
 
 set t_Co=256 " iTerm2など既に256色環境なら無くても良い
 syntax enable " 構文に色を付ける
@@ -215,7 +217,7 @@ set noswapfile
 "----------------------------------------------------------
 set list " 不可視文字の可視化
 set wrap " 長いテキストの折り返し
-set colorcolumn=100 "100文字目にラインを入れる
+set colorcolumn=80 "80文字目にラインを入れる
 " スクリーンベルの無効化
 set t_vb=
 set novisualbell
@@ -285,9 +287,11 @@ let g:syntastic_check_on_wq = 1
 
 " Javascript用. 構文エラーチェックにESLintを使用
 let g:syntastic_javascript_checkers=['eslint']
+" Python用. 構文エラーチェックにpep8とpyflakesを使用
+let g:syntastic_python_checkers=['pep8', 'pyflakes']
 " Javascript以外は構文エラーチェックをしない
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['javascript'],
+                           \ 'active_filetypes': ['javascript', 'python'],
                            \ 'passive_filetypes': [] }
 
 "----------------------------------------------------------
