@@ -28,6 +28,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "NeoBundle 'flrnd/plastic.vim'
 "NeoBundle 'sainnhe/edge'
 NeoBundle 'cocopon/iceberg.vim'
+"NeoBundle 'kuroitu/pyceberg.vim'
 " 花文字
 "NeoBundle 'sainnhe/icursive-nerd-font'
 " カラースキームを調べる
