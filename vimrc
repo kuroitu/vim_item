@@ -27,10 +27,10 @@ if dein#load_state(s:dein_dir)
         call mkdir(s:rc_dir, 'p')
     endif
     " 起動時に読み込むプラグイン群
-    let s:toml=s:rc_dir . '/dein.toml'
+    let s:toml=s:rc_dir . '/plugins.toml'
     call dein#load_toml(s:toml, {'lazy':0})
     " 遅延読み込みしたいプラグイン群
-    let s:lazy_toml=s:rc_dir . '/dein_lazy.toml'
+    let s:lazy_toml=s:rc_dir . '/lazy_plugins.toml'
     call dein#load_toml(s:lazy_toml, {'lazy':1})
 
     " 設定終了
